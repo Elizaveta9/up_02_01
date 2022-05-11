@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.up_02_01.controllers.EditAbiturientController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="parentsPane" prefHeight="500.0" prefWidth="500.0" visible="false">
+               <children>
+                  <Label layoutX="44.0" layoutY="28.0" text="Статус семьи">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="familyStatusCB" layoutX="306.0" layoutY="28.0" prefWidth="150.0" />
+                  <Label layoutX="43.0" layoutY="71.0" text="Количество детей в семье">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="childeAmountTF" layoutX="306.0" layoutY="71.0" />
+                  <Separator layoutY="120.0" prefWidth="500.0" />
+                  <Separator layoutY="310.0" prefWidth="500.0" />
+                  <Label layoutX="229.0" layoutY="123.0" text="Мама">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="231.0" layoutY="313.0" text="Папа">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <FlowPane alignment="CENTER" columnHalignment="CENTER" layoutY="149.0" prefHeight="30.0" prefWidth="500.0">
+                     <children>
+                        <TextField fx:id="motherNameTF" prefHeight="26.0" prefWidth="400.0" promptText="Имя">
+                           <FlowPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </FlowPane.margin>
+                        </TextField>
+                     </children>
+                  </FlowPane>
+                  <Label layoutX="298.0" layoutY="276.0" text="Телефон">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="276.0" text="Место работы">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <GridPane layoutY="188.0" prefHeight="61.0" prefWidth="500.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="90.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="Адрес">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="15.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <TextField fx:id="motherAddressTF" prefHeight="27.0" prefWidth="106.0" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="15.0" right="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                     </children>
+                  </GridPane>
+                  <TextField fx:id="motherWorkTF" layoutX="129.0" layoutY="276.0" />
+                  <TextField fx:id="motherPhoneTF" layoutX="369.0" layoutY="276.0" prefHeight="26.0" prefWidth="117.0" />
+                  <Label layoutX="301.0" layoutY="466.0" text="Телефон">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="17.0" layoutY="466.0" text="Место работы">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <FlowPane alignment="CENTER" columnHalignment="CENTER" layoutY="339.0" prefHeight="30.0" prefWidth="500.0">
+                     <children>
+                        <TextField fx:id="fatherNameTF" prefWidth="400.0" promptText="Имя">
+                           <FlowPane.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </FlowPane.margin>
+                        </TextField>
+                     </children>
+                  </FlowPane>
+                  <GridPane layoutX="3.0" layoutY="378.0" prefHeight="61.0" prefWidth="500.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="90.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="Адрес">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="15.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <TextField fx:id="fatherAddressTF" prefHeight="27.0" prefWidth="106.0" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="15.0" right="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                     </children>
+                  </GridPane>
+                  <TextField fx:id="fatherWorkTF" layoutX="132.0" layoutY="466.0" />
+                  <TextField fx:id="fatherPhoneTF" layoutX="372.0" layoutY="466.0" prefHeight="26.0" prefWidth="117.0" />
+               </children></AnchorPane>
+            <AnchorPane fx:id="educationPane" prefHeight="500.0" prefWidth="500.0" visible="false">
+               <children>
+                  <Label layoutX="14.0" layoutY="44.0" text="Уровень предыдущего образования">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="educationLevelCB" layoutX="292.0" layoutY="43.0" prefHeight="26.0" prefWidth="193.0" />
+                  <Label layoutX="14.0" layoutY="94.0" text="Номер аттестата ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="144.0" text="Средний балл аттестата">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="194.0" text="Выбранная специальность">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="244.0" text="Код специальности">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="atestatNumberTF" layoutX="292.0" layoutY="94.0" prefWidth="193.0" />
+                  <TextField fx:id="gradeTF" layoutX="292.0" layoutY="144.0" prefWidth="193.0" />
+                  <TextField fx:id="specialityNameTF" layoutX="292.0" layoutY="194.0" prefWidth="193.0" />
+                  <TextField fx:id="specialityCodeTF" layoutX="292.0" layoutY="244.0" prefWidth="193.0" />
+               </children></AnchorPane>
+            <AnchorPane fx:id="personalDataPane" prefHeight="500.0" prefWidth="500.0" visible="false">
+               <children>
+                  <Separator layoutY="302.0" prefHeight="1.0" prefWidth="500.0" />
+                  <Label layoutX="218.0" layoutY="14.0" text="Паспорт">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="147.0" layoutY="312.0" text="Свидетельство о рождении">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="50.0" text="ФИО">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fullnameTF" layoutX="168.0" layoutY="50.0" prefHeight="26.0" prefWidth="314.0" />
+                  <DatePicker fx:id="birthdayDPPassport" layoutX="168.0" layoutY="85.0" prefWidth="314.0" />
+                  <Label layoutX="25.0" layoutY="85.0" text="Дата рождения">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="birthPlaceTF" layoutX="168.0" layoutY="120.0" prefWidth="314.0" />
+                  <TextField fx:id="passportSeriaTF" layoutX="168.0" layoutY="155.0" prefWidth="314.0" />
+                  <Label layoutX="25.0" layoutY="120.0" text="Место  рождения">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="190.0" text="Номер">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="155.0" text="Серия">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="passportNumberTF" layoutX="168.0" layoutY="190.0" prefWidth="314.0" />
+                  <Label layoutX="25.0" layoutY="225.0" text="Кем выдан">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="whoGavePassportTF" layoutX="168.0" layoutY="225.0" prefWidth="314.0" />
+                  <Label layoutX="25.0" layoutY="260.0" text="Дата выдачи">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="whenPassportGivenDP" layoutX="168.0" layoutY="260.0" prefWidth="314.0" />
+                  <TextField fx:id="birthSertificateSeriaTF" layoutX="168.0" layoutY="352.0" prefWidth="314.0" />
+                  <Label layoutX="25.0" layoutY="387.0" text="Номер">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="25.0" layoutY="352.0" text="Серия">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="birthSertificateNumberTF" layoutX="168.0" layoutY="387.0" prefWidth="314.0" />
+                  <Label layoutX="25.0" layoutY="422.0" text="Кем выдан">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="whoGaveBirthSertificateTF" layoutX="168.0" layoutY="422.0" prefWidth="314.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="abiturientPane" prefHeight="500.0" prefWidth="500.0">
+               <children>
+                  <Label layoutX="60.0" layoutY="83.0" text="Имя">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="surnameTF" layoutX="271.0" layoutY="43.0" prefWidth="180.0" />
+                  <TextField fx:id="nameTF" layoutX="271.0" layoutY="83.0" prefWidth="180.0" />
+                  <Label layoutX="60.0" layoutY="43.0" text="Фамилия">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="123.0" text="Отчество">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="patronymicTF" layoutX="271.0" layoutY="123.0" prefWidth="180.0" />
+                  <Label layoutX="60.0" layoutY="163.0" text="Дата рождения">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="birthdayDP" layoutX="271.0" layoutY="163.0" prefHeight="26.0" prefWidth="180.0" />
+                  <TextField fx:id="addressTF" layoutX="271.0" layoutY="203.0" prefWidth="180.0" />
+                  <Label layoutX="60.0" layoutY="203.0" text="Адресс">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="60.0" layoutY="363.0" text="Телефон">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="phoneNumberTF" layoutX="271.0" layoutY="363.0" prefWidth="180.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <FlowPane columnHalignment="RIGHT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="saveAbiturientButton" disable="true" mnemonicParsing="false" text="Сохранить">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </Button>
+            <Button fx:id="nextPaneButton" alignment="CENTER_RIGHT" mnemonicParsing="false" text="Далее -&gt;">
+               <FlowPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </FlowPane.margin>
+            </Button>
+         </children>
+      </FlowPane>
+   </bottom>
+</BorderPane>
